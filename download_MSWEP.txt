@@ -1,0 +1,7 @@
+## To download MSWEP data
+# 1. make sure you're still shared on the gdrive (easiset to just delete config and reauth imo) https://www.youtube.com/watch?v=vPs9K_VC-lg
+# 2. use rclone
+
+### MSWEP website: https://www.gloh2o.org/mswep/
+
+$ rclone sync -v --exclude 3hourly/ --drive-shared-with-me GoogleDrive:/MSWEP_V280 /Users/miriam/Documents/02_academia/02_PhD/research/raw_data/MSWEP_V280
